@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Menu</title>
+
+    <style>
+        body {
+            margin: 0px;
+
+        }
+
+        #header {
+            text-align: center;
+
+        }
+
+        #logo {
+            width: 250px;
+            height: auto;
+        }
+
+        #menu_bar {
+            text-align: center;
+            background-color: cadetblue;
+
+        }
+
+        #menu_bar li {
+            display: inline-block;
+            padding: 15px 10px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        #container {
+            text-align: center;
+            padding: 50px 100px;
+        }
+        #lg{
+            width: 100%;
+        }
+        .sticky{
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <img src="https://www.forbesindia.com/media/images/2022/Apr/img_183207_planetearth.jpg" id="logo" alt="">
+
+    </div>
+    <nav id="menu_bar" >
+        <li>Home</li>
+        <li>About us</li>
+        <li>contact us</li>
+        <li>client</li>
+        <li>Our team</li>
+    </nav>
+
+
+
+
+
+
+
+    <div id="container">
+        <h1>About us</h1>
+        <img id="lg" src="https://www.fabhotels.com/blog/wp-content/uploads/2022/04/earth-day.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nobis incidunt iure illo tenetur commodi
+            dolorem laudantium quaerat mollitia nam consequuntur dignissimos odit, non libero. Atque magni earum animi,
+            non eos nostrum in molestias necessitatibus natus quo ut accusamus ipsum vitae laborum maiores eius iusto
+            iste? Sit, illo veritatis quaerat velit dignissimos hic? Et, asperiores explicabo id impedit nam iste
+            consectetur sequi aspernatur sint maxime tempora incidunt qui minima exercitationem quibusdam quo. Veniam
+            laborum assumenda pariatur tempore, blanditiis ullam corporis adipisci inventore facilis voluptate dolorum,
+            harum dolor perspiciatis, qui error veritatis ea architecto reiciendis? Consequatur fugiat modi impedit quos
+            neque illo eveniet asperiores! Voluptatum, doloribus reiciendis! Repellendus consequuntur illo incidunt.
+            Voluptatem expedita blanditiis delectus quibusdam dolore illum tempore sunt assumenda ea porro itaque
+            dolorum molestiae ratione et reprehenderit vero, esse corporis unde eos. Ipsa nisi laudantium, tempore
+            perspiciatis asperiores, ducimus ut quis deserunt eligendi officia repellendus necessitatibus mollitia!
+            Cumque placeat provident quos, saepe magni, fugiat blanditiis magnam ratione doloribus porro dolore non!
+            Quaerat iure aliquam repudiandae? Consequatur repudiandae nisi debitis laborum voluptatibus voluptates
+            minima possimus ex iusto fugit libero commodi nam repellendus sed voluptas reiciendis quis, ipsum a
+            blanditiis doloribus porro facere molestiae itaque. Blanditiis aliquam officiis commodi omnis temporibus
+            quia a quis animi laborum numquam tempore, vel perferendis facilis. Iure cumque id ea reiciendis
+            accusantium, doloribus quas illo qui. Consequuntur debitis quo praesentium accusantium possimus distinctio
+            ipsum fugiat, asperiores molestiae, eveniet, perspiciatis accusamus. Velit illo error fugit! Quam molestiae
+            hic suscipit, doloremque voluptas quas neque unde est. Error rem nihil dolore accusantium saepe consequatur
+            aut deserunt, id mollitia, ab sit eius harum velit veritatis nulla voluptas itaque? Voluptates nulla dolores
+            amet optio quisquam soluta ea assumenda iste id. Eveniet facilis recusandae fuga debitis architecto autem
+            repellendus a quam ipsum sequi, suscipit quasi perferendis. Ullam aliquid minus assumenda enim? Nemo eius
+            dolores molestiae hic maiores delectus. Architecto cum laborum incidunt reiciendis, veniam excepturi
+            cupiditate assumenda esse facilis possimus cumque numquam ea magni rerum dignissimos officiis vitae,
+            repellendus quos, nam eius distinctio eaque dicta? Esse, cum maiores. Sunt, obcaecati et, officia pariatur
+            neque expedita laborum debitis distinctio delectus ratione suscipit quos blanditiis saepe odit cum nesciunt
+            tenetur dolorum illum porro modi excepturi. Quos porro quod ullam fugit culpa ratione? Natus asperiores quam
+            perspiciatis pariatur magnam dolore deserunt a, nemo quasi vel quos, excepturi reprehenderit sunt?
+            Repellendus unde amet delectus laborum expedita aspernatur! Suscipit molestiae exercitationem laboriosam
+            ducimus ab distinctio non explicabo, sint repellat, ad quibusdam veniam esse cupiditate expedita fugiat nam
+            praesentium unde delectus quam placeat repudiandae minima autem. Necessitatibus nobis fugiat explicabo odit
+            modi error? A voluptatem vel explicabo ut eligendi hic enim quibusdam, quidem tempore soluta excepturi
+            laborum est, maxime fuga sit corrupti, quos minima labore earum esse numquam. Cupiditate vero debitis
+            repellat facere tempore, quas molestiae hic aliquid ab omnis natus incidunt recusandae reprehenderit quaerat
+            ex obcaecati nobis quam amet veniam eveniet dolorem impedit aut! Inventore eius assumenda quia quas ex cum
+            labore tempora hic, quisquam, vero dolor animi voluptatibus dicta laborum beatae modi aliquam laboriosam
+            velit nesciunt.</p>
+    </div>
+   
+</body>
+
+<script>
+    window.addEventListener('scroll', function(){
+     let navbar = document.getElementById('menu_bar')
+
+        if(window.pageYOffset >=190){
+            navbar.classList.add('sticky')
+        }else{
+            navbar.classList.remove('sticky')
+        }
+    })
+</script>
+
+</html>

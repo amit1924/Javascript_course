@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let book = {
+        name: "physics",
+        page: 200,
+        price: 100,
+
+        publication: {
+            pub_name: "Amit"
+            
+
+
+
+        }
+
+    };
+    //    let name = book.name
+    // let{name,page,price}=book;
+    //    alert(name)
+    //  let{name: title ,page,price, year=2023}=book;
+    let { name: title, page, price, publication: { pub_name } } = book;
+    alert(pub_name)
+
+</script>
+
+</html>

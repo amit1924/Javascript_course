@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "xabikos.javascriptsnippets",
+        "ms-vscode.vscode-typescript-next",
+        "ms-vscode.js-debug-nightly",
+        "akamud.vscode-javascript-snippet-pack",
+        "ritwickdey.liveserver"
+    ]
+}

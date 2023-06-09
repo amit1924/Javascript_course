@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    
+    <script>
+        async function amit(){
+        
+let delhiWeather = new Promise(function(resolve, reject){
+    setTimeout(function() {
+        resolve('27 deg');
+    },1000)
+})
+
+let patnaWeather = new Promise(function(resolve, reject){
+    setTimeout(function() {
+        resolve('21 deg');
+    },5000)
+})
+console.log('Fetching Delhi weather')
+let delhiW =await delhiWeather
+console.log('delhi weather' +delhiW)
+console.log('Fetching Patna weather')
+     let patnaW = await patnaWeather   
+     console.log('patna weather' +patnaW)
+
+     return[delhiW, patnaW]
+}
+
+    /* let a = amit();
+     a.then(function(value){
+        console.log(value)
+     })*/
+
+     const m =async ()=>{
+        let a = await amit();
+       
+       }
+   
+       m()
+
+     
+    </script>
+</body>
+</html>

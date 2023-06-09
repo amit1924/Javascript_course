@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+       const createToDo= async function(){
+      let options = {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "X-CSRF-TOKEN": "0.0.0.0.0",
+        },
+        body: JSON.stringify({
+          title: "foo",
+          body: "bar",
+          userId: 1,
+        }),
+      
+    }
+
+     let p =await fetch("https://jsonplaceholder.typicode.com/posts", options)
+        let response = await p.json()
+        return response
+      }
+    const mainFunc =async function(){
+        let todo = createToDo();
+        console.log(todo)
+    }
+    
+    mainFunc()
+    </script>
+  </body>
+</html>

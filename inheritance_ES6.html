@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+//     class emp{
+//         constructor(n){
+//             console.log('emp constructor called')
+//             this.name = n;
+//         }
+//         msg(){
+//             console.log('hiii')
+//         }
+
+//     }
+//     class manager extends emp{
+//         constructor(p,d){
+//             super(p);
+//             this.department = d;
+//         }
+//         msg(){
+//             console.log('hello  ji')
+//         }
+//         info(){ 
+//             //super.msg ();
+//             this.msg();
+//             console.log(this.name + " " + 'is manager of department of' + " "+ this.department)
+//         }
+
+//     }
+//     let mng1 = new manager('amit' ,'web development')
+//     //console.log(mng1.msg())
+//    // console.log(mng1.info())
+//     console.log(mng1.info())
+
+class emp{
+       #name ="";
+       constructor(n){
+       // this.name =n ;
+       this.#name =n ;
+    }
+    #getName(){
+        console.log(this.#name);
+    }
+    pubfun(){
+        this.#getName()
+    }
+}
+let emp1 = new emp('amit')
+//console.log(emp1.name)
+console.log(emp1.pubfun());
+</script>
+</html>

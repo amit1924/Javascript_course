@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let usefulMethod ={
+        sayHi(){
+            console.log('hi');
+
+        },
+        sayBye(){
+            console.log('bye');
+
+        }
+    };
+    class user {
+        constructor(){
+        this.name ='amit'
+    }
+}
+Object.assign(user.prototype, usefulMethod)
+ let usr1 = new user()
+ //console.log(usr1)
+ console.log(usr1.sayHi())
+</script>
+</html>

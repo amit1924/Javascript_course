@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    class person{
+        constructor(n,a){
+            //console.log('person created...')
+            this.name = n;
+            this.age = a;
+
+        }
+        sayHi(){
+            console.log('Hi...')
+        }
+        static hello(){
+            console.log('hello')
+
+        }
+    }
+    let person1 = new person( 'amit' , 30)
+    person1.sayHi();
+    person.hello()
+    console.log(person1);
+</script>
+</html>
